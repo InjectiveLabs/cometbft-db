@@ -29,6 +29,11 @@ func NewGoLevelDB(name string, dir string) (*GoLevelDB, error) {
 
 func NewGoLevelDBWithOpts(name string, dir string, o *opt.Options) (*GoLevelDB, error) {
 	dbPath := filepath.Join(dir, name+".db")
+	if o == nil {
+		o = &opt.Options{
+			Compression: opt.NoCompression,
+		}
+	}
 	db, err := leveldb.OpenFile(dbPath, o)
 	if err != nil {
 		return nil, err
