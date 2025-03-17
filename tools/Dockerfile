@@ -1,10 +1,10 @@
-FROM golang:1.23
+FROM golang:1.24.1
 
 RUN apt update \
-    && apt install -y \
-       libbz2-dev libgflags-dev libsnappy-dev libzstd-dev zlib1g-dev liblz4-dev \
-       make tar wget build-essential g++ cmake \
-       libleveldb-dev libleveldb1d
+  && apt install -y \
+  libbz2-dev libgflags-dev libsnappy-dev libzstd-dev zlib1g-dev liblz4-dev \
+  make tar wget build-essential g++ cmake \
+  libleveldb-dev libleveldb1d
 
 ARG ROCKSDB=9.8.4
 

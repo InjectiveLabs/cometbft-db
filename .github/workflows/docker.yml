@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  ORG: cometbft
+  ORG: injectivelabs
   IMAGE_NAME: cometbft-db-testing
   GIT_TAG: "${{ inputs.tag }}"
 

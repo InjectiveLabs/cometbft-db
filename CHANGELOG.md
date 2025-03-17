@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.0.4-inj
+
+*March 16, 2025*
+
+This release bumps the Go version to 1.24.1.
+
+### DEPENDENCIES
+
+- `[deps]` Bump Go version to 1.24.1
+
 ## v1.0.4
 
 *February 28, 2025*
